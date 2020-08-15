@@ -13,9 +13,13 @@
           <h2 class="card-title"><%= flat.name %></h5>
           <h3 class="card-subtitle mb-2 text-muted"><%= flat.address %></h6>
           <p class="card-text"><%= flat.description %></p>
-          <p class="card-text"><i class="fas fa-euro-sign"></i><%= flat.price_per_night %></p>
-          <p class="card-text"><%= flat.number_of_guests %></p>
+          <p class="card-text"><i class="fas fa-euro-sign"></i> <%= flat.price_per_night %></p>
+          <p class="card-text"><%= flat.number_of_guests %> guest(s)</p>
           <%= link_to "More info", flat_path(flat) %>
+              <%= link_to "Romove",
+                      flat_path(flat),
+                      method: :delete,
+                      data: { confirm: "Are you sure?" } %>
         </div>
       </div>
     <% end %>

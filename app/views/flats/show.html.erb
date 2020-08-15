@@ -1,7 +1,48 @@
+ <%# var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')  %>
+ <% require "mapbox-sdk" %>
+<%# Mapbox.access_token = "pk.eyJ1IjoiYmRhcmN5IiwiYSI6ImNrZGE5YXpmYjE3eHUycXRndGpqa3gxaDUifQ.G567OYyVC-qqLCl1ASIcnQ" %>
+
+<div id='flat-map' style='width: 100vw; height: 300px;'></div>
+
 <h2><%= @flat.name %></h2>
 <p><%= @flat.address %></p>
 <p><%= @flat.description %></p>
-<p><%= @flat.price_per_night%></p>
-<p><%= @flat.number_of_guests%></p>
+<p><%= @flat.price_per_night%> euros </p>
+<p><%= @flat.number_of_guests%> guest(s) </p>
 
-<%= link_to "Back to flats list", root_path %>
+<!-- <p><%# link_to "Modify", flat_path(@path) %></p> -->
+
+<p><%= link_to "Back to flats list", root_path %></p>
+
+
+<script>
+<% address = @flat.address %>
+<% places = Mapbox::Geocoder.geocode_forward(address, {:proximity => {:longitude => -74.6968, :latitude => 40.7843}}) %>
+<%= placeCoordinates = places[0]["features"][0]["center"] %>
+let coordinates = <%= placeCoordinates.map { |place| place } %>
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiYmRhcmN5IiwiYSI6ImNrZGE5YXpmYjE3eHUycXRndGpqa3gxaDUifQ.G567OYyVC-qqLCl1ASIcnQ';
+const map = new mapboxgl.Map({
+container: 'flat-map',
+style: 'mapbox://styles/bdarcy/ckdvyh6ta2lp419nwdqsb8h4g', // stylesheet location
+center: coordinates, // starting position [lng, lat]
+zoom: 9 // starting zoom
+
+})
+
+new mapboxgl.Marker()
+   .setLngLat(coordinates)
+   .addTo(map);
+
+</script>
+
+
+
+
+
+<!--   const map = new mapboxgl.Marker()
+    .setLngLat([-74.5, 40])
+    .addTo(map); // add the marker to the map
+  map.addControl(new mapboxgl.NavigationControl()); -->
+
+

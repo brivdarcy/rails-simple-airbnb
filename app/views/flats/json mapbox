@@ -1,0 +1,283 @@
+[
+  {
+    "type": "FeatureCollection",
+    "query": [
+      "chester",
+      "nj"
+    ],
+    "features": [
+      {
+        "id": "place.19265010375375880",
+        "type": "Feature",
+        "place_type": [
+          "place"
+        ],
+        "relevance": 1,
+        "properties": {
+          "wikidata": "Q3014459"
+        },
+        "text": "Chester",
+        "place_name": "Chester, New Jersey, United States",
+        "bbox": [
+          -74.7406370098727,
+          40.7194501349244,
+          -74.6237060993922,
+          40.8336099261131
+        ],
+        "center": [
+          -74.6968,
+          40.7843
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.6968,
+            40.7843
+          ]
+        },
+        "context": [
+          {
+            "id": "region.8524001885700330",
+            "wikidata": "Q1408",
+            "short_code": "US-NJ",
+            "text": "New Jersey"
+          },
+          {
+            "id": "country.19678805456372290",
+            "short_code": "us",
+            "wikidata": "Q30",
+            "text": "United States"
+          }
+        ]
+      },
+      {
+        "id": "poi.249108207100",
+        "type": "Feature",
+        "place_type": [
+          "poi"
+        ],
+        "relevance": 0.99,
+        "properties": {
+          "foursquare": "5e2efac18bfc6a0007476e54",
+          "landmark": true,
+          "address": "Rt 206 Maple Avenue",
+          "category": "grocery, shop"
+        },
+        "text": "ShopRite of Chester",
+        "place_name": "ShopRite of Chester, Rt 206 Maple Avenue, Chester, New Jersey 07930, United States",
+        "matching_text": "NJ",
+        "matching_place_name": "NJ, Rt 206 Maple Avenue, Chester, New Jersey 07930, United States",
+        "center": [
+          -74.69543,
+          40.781115
+        ],
+        "geometry": {
+          "coordinates": [
+            -74.69543,
+            40.781115
+          ],
+          "type": "Point"
+        },
+        "context": [
+          {
+            "id": "neighborhood.274417",
+            "text": "Milltown"
+          },
+          {
+            "id": "postcode.17712306994593220",
+            "text": "07930"
+          },
+          {
+            "id": "place.9585012551375880",
+            "wikidata": "Q3014459",
+            "text": "Chester"
+          },
+          {
+            "id": "region.8524001885700330",
+            "wikidata": "Q1408",
+            "short_code": "US-NJ",
+            "text": "New Jersey"
+          },
+          {
+            "id": "country.19678805456372290",
+            "short_code": "us",
+            "wikidata": "Q30",
+            "text": "United States"
+          }
+        ]
+      },
+      {
+        "id": "poi.575525625538",
+        "type": "Feature",
+        "place_type": [
+          "poi"
+        ],
+        "relevance": 0.95,
+        "properties": {
+          "foursquare": "596f717dbe57632c35142dd4",
+          "landmark": true,
+          "address": "Chester Rd, Bretton",
+          "category": "sporting goods, sporting, sporting good, shop, sports store"
+        },
+        "text": "Chester & North Wales Golf Academy",
+        "place_name": "Chester & North Wales Golf Academy, Chester Rd, Bretton, Chester, Wales CH4 0DF, United Kingdom",
+        "center": [
+          -2.955699,
+          53.171296
+        ],
+        "geometry": {
+          "coordinates": [
+            -2.955699,
+            53.171296
+          ],
+          "type": "Point"
+        },
+        "context": [
+          {
+            "id": "postcode.11180639407778410",
+            "text": "CH4 0DF"
+          },
+          {
+            "id": "locality.16023292636756370",
+            "wikidata": "Q990946",
+            "text": "Broughton"
+          },
+          {
+            "id": "place.6603356693375880",
+            "wikidata": "Q170263",
+            "text": "Chester"
+          },
+          {
+            "id": "district.5444775721714510",
+            "wikidata": "Q505610",
+            "text": "Sir Y Fflint"
+          },
+          {
+            "id": "region.8691114893307640",
+            "wikidata": "Q25",
+            "short_code": "GB-WLS",
+            "text": "Wales"
+          },
+          {
+            "id": "country.12405201072814600",
+            "short_code": "gb",
+            "wikidata": "Q145",
+            "text": "United Kingdom"
+          }
+        ]
+      },
+      {
+        "id": "address.8646572549644008",
+        "type": "Feature",
+        "place_type": [
+          "address"
+        ],
+        "relevance": 0.95,
+        "properties": {
+          "accuracy": "street"
+        },
+        "text": "Chester Street",
+        "place_name": "Chester Street, Hosford, Florida 32334, United States",
+        "matching_text": "Chester NE St",
+        "matching_place_name": "Chester NE St, Hosford, Florida 32334, United States",
+        "center": [
+          -84.8058450375541,
+          30.3873589888559
+        ],
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -84.8058450375541,
+            30.3873589888559
+          ]
+        },
+        "context": [
+          {
+            "id": "postcode.12503611812395760",
+            "text": "32334"
+          },
+          {
+            "id": "place.14800556439161240",
+            "wikidata": "Q5907940",
+            "text": "Hosford"
+          },
+          {
+            "id": "region.7862008843235010",
+            "wikidata": "Q812",
+            "short_code": "US-FL",
+            "text": "Florida"
+          },
+          {
+            "id": "country.19678805456372290",
+            "short_code": "us",
+            "wikidata": "Q30",
+            "text": "United States"
+          }
+        ]
+      },
+      {
+        "id": "poi.790274072201",
+        "type": "Feature",
+        "place_type": [
+          "poi"
+        ],
+        "relevance": 0.944286,
+        "properties": {
+          "foursquare": "4c1bdd3f63750f47af99b567",
+          "landmark": true,
+          "address": "72 Main St.",
+          "category": "bar, alcohol",
+          "maki": "bar"
+        },
+        "text": "Chesters",
+        "place_name": "Chesters, 72 Main St., Newark, England NG24 3PU, United Kingdom",
+        "center": [
+          -0.779239,
+          53.055392
+        ],
+        "geometry": {
+          "coordinates": [
+            -0.779239,
+            53.055392
+          ],
+          "type": "Point"
+        },
+        "context": [
+          {
+            "id": "postcode.15748586686811940",
+            "text": "NG24 3PU"
+          },
+          {
+            "id": "locality.17930166607698340",
+            "wikidata": "Q2517257",
+            "text": "Balderton"
+          },
+          {
+            "id": "place.8146127609596740",
+            "wikidata": "Q49940",
+            "text": "Newark"
+          },
+          {
+            "id": "district.7515055901149980",
+            "wikidata": "Q23092",
+            "text": "Nottinghamshire"
+          },
+          {
+            "id": "region.13483278848453920",
+            "wikidata": "Q21",
+            "short_code": "GB-ENG",
+            "text": "England"
+          },
+          {
+            "id": "country.12405201072814600",
+            "short_code": "gb",
+            "wikidata": "Q145",
+            "text": "United Kingdom"
+          }
+        ]
+      }
+    ],
+    "attribution": "NOTICE: © 2020 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+  },
+  {}
+]

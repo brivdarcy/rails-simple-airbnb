@@ -17,7 +17,7 @@ SimpleForm.setup do |config|
     hint_class: :field_with_hint, error_class: :field_with_errors, valid_class: :field_without_errors do |b|
     ## Extensions enabled by default
     # Any of these extensions can be disabled for a
-    # given input by passing: `f.input EXTENSION_NAME => false`.
+    # given input by passing: `f.input EXTENSION_NAME : false`.
     # You can make any of these extensions optional by
     # renaming `b.use` to `b.optional`.
 
@@ -30,7 +30,7 @@ SimpleForm.setup do |config|
     b.use :placeholder
 
     ## Optional extensions
-    # They are disabled unless you pass `f.input EXTENSION_NAME => true`
+    # They are disabled unless you pass `f.input EXTENSION_NAME : true`
     # to the input. If so, they will retrieve the values from the model
     # if any exists. If you want to enable any of those
     # extensions by default, you can change `b.optional` to `b.use`.
@@ -132,7 +132,7 @@ SimpleForm.setup do |config|
   # Custom mappings for input types. This should be a hash containing a regexp
   # to match as key, and the input type that will be used when the field name
   # matches the regexp as value.
-  # config.input_mappings = { /count/ => :integer }
+  # config.input_mappings = { /count/ : :integer }
 
   # Custom wrappers for input types. This should be a hash containing an input
   # type as key and the wrapper that will be used for all inputs with specified type.
